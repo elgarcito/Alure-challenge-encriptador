@@ -58,10 +58,11 @@ mainContainer__inputAndResponse__input{
 }
 
 .mainContainer__inputAndResponse__input__inputBox{
+    margin-top: 50px;
     background-color: var(--color-fondo);
     border: 0;
     /*height: 640px;*/
-    height: 45rem;
+    height: 41rem;
     width: 100%;
     /*width: 42.5rem;*/
     /*width: 680px;*/
@@ -224,4 +225,53 @@ mainContainer__inputAndResponse__input{
 
     */
     text-align: center;
+}
+
+/*Tablet view up to 768px*/
+@media (max-width:768px){
+    .mainContainer{
+        background-color: var(--color-fondo);
+        display: flex;
+        /*
+        width: 116.5rem;
+        */
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input__message_buttons{
+        margin: 5%;
+    }
+
+    .mainContainer__inputAndResponse__input__inputBox__buttonBox{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+
+
+    .mainContainer__inputAndResponse__encriptedResponse__container{
+        /*width: 32.5rem;*/
+        /*width: 520px;*/
+        /*width: 100%;*/
+        display: flex;
+        margin: 0;
+        width: 100%;
+        
+    }
+    
+    .mainContainer__inputAndResponse__encriptedResponse{
+    width: 100%;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+    gap: 16PX;
+    }
+
+    .mainContainer__inputAndResponse__encriptedResponse__image{
+        display: none;
+    }
+
+    
 }

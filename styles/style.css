@@ -18,25 +18,27 @@
 .mainContainer{
     background-color: var(--color-fondo);
     display: flex;
-    justify-items: auto;
-    width: 100%;
-    height: 100%;
+ 
 }
 
 
 .mainContainer__inputAndResponse{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top:40px ;
-    margin-bottom: 72px;
+    width: 920px;
 }
 
 .mainContainer__header__logo{
     justify-content: start;
+    width: 100%;
+    justify-content: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.input__message_buttons{
+    margin-left: 240px;
+    margin-right: 0px;
 }
 
 mainContainer__inputAndResponse__input{
@@ -47,66 +49,104 @@ mainContainer__inputAndResponse__input{
 .mainContainer__inputAndResponse__input__inputBox{
     background-color: var(--color-fondo);
     border: 0;
-    height: 800px;
-    width: 100%;
+    height: 300px;
+    width: 680px;
+    font-size: 32px;
+    color: var(--color-ingreseTextoAqui);
+    outline: none;
+    resize: none;
 }
 
+/**
 .mainContainer__inputAndResponse__input__inputBox::placeholder{
     color: var(--color-ingreseTextoAqui);
     font-family: var(--font-general);
-    vertical-align: top;
     font-size: 32px;
     font-weight: 400;
     line-height: 1;
 }
+**/
+
+.blank__space{
+    height: 340px;
+}
 
 .mainContainer__inputAndResponse__input__inputBox__message{
+    display: flex;
     font-family: var(--font-general);
     color: var(--color-ingresaYsoloMinusculas);
     width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    gap: 0.5%;
+}
+
+.exclamationIcon{
+    width: 20px;
+    height: 20x;
 }
 
 
 .mainContainer__inputAndResponse__input__inputBox__buttonBox{
     display: flex;
     width: 100%;
-    gap: 2%;
+    height: 67px;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .mainContainer__inputAndResponse__input__inputBox__buttonBox__encriptButton{
     background-color:var(--color-botonEncriptar);
-    width: 20%;
-    height: 67px;
+    width: 328px;
+    height: 100%;
     border-radius: 24px;
+    font-size: 16px;
+    color: var(--color-botonDesencriptar);
+    border-color: var(--color-botonEncriptar);
 }
 
 .mainContainer__inputAndResponse__input__inputBox__buttonBox__unencriptButton{
     background-color: var(--color-botonDesencriptar);
     width: 328px;
-    height: 67px;
+    height: 100%;
     border-radius: 24px;
+    font-size: 16px;
+    color: var(--color-botonEncriptar);
+    border-color: var(--color-botonEncriptar);
+    border-width: 1px;
+}
+
+.mainContainer__inputAndResponse__encriptedResponse__container{
+    width: 520px;
 }
 
 .mainContainer__inputAndResponse__encriptedResponse{
    background-color: var(--color-muneco);
-   width: 30%;
+   width: 400px;
    height: 944px;
    border-radius: 32px;
    margin-top: 40px;
    margin-bottom: 40px;
    margin-right: 40px;
+   margin-left: 80px;
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-items: center;
+   justify-content: center;
 }
 
 .mainContainer__inputAndResponse__encriptedResponse__image{
     width: auto;
+    margin-bottom: 32px;
 }
 
 .mainContainer__inputAndResponse__encriptedResponse__firstP{
     font-family: var(--font-general);
     font-weight: 700;
+    font-size: 24px;
+    margin-right: 16px;
+    text-align: center;
 }
 
 
@@ -114,4 +154,8 @@ mainContainer__inputAndResponse__input{
     font-family: var(--font-general);
     color: var(--color-ingresaYsoloMinusculas);
     font-weight: 400;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    text-align: center;
 }

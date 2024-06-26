@@ -28,8 +28,8 @@
                     <p>Solo letras minisculas y sin acento, max 500 caracteres</p>
                 </div>
                 <div class="mainContainer__inputAndResponse__input__inputBox__buttonBox">
-                    <input type="button" value="Encriptar" class="mainContainer__inputAndResponse__input__inputBox__buttonBox__encriptButton">
-                    <input type="button" value="Desencriptar" class="mainContainer__inputAndResponse__input__inputBox__buttonBox__unencriptButton">
+                    <input onclick="encriptText();" type="button" value="Encriptar" class="mainContainer__inputAndResponse__input__inputBox__buttonBox__encriptButton" id="encriptButton">
+                    <input onclick="unEncriptText();" type="button" value="Desencriptar" class="mainContainer__inputAndResponse__input__inputBox__buttonBox__unencriptButton" id="unEncriptButton">
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
         <div class="mainContainer__inputAndResponse__encriptedResponse">
 
             <textarea name="response" id="textArea_response" class="mainContainer__inputAndResponse__encriptedResponse__responseBox" readonly="readonly">
-                
+
             </textarea>
 
             <!--
@@ -47,17 +47,18 @@
             -->
 
 
-            <img src="/assets/Muñeco.png" alt="Muñeco con lupa" class="mainContainer__inputAndResponse__encriptedResponse__image">
-            <p class="mainContainer__inputAndResponse__encriptedResponse__firstP">
+            <img src="/assets/Muñeco.png" alt="Muñeco con lupa" id="muneco_con_lupa" class="mainContainer__inputAndResponse__encriptedResponse__image">
+            <p class="mainContainer__inputAndResponse__encriptedResponse__firstP" id="first_message_encripted">
                 Ningún mensaje fue encontrado
             </p>
-            <p class="mainContainer__inputAndResponse__encriptedResponse__secondP">
+            <p class="mainContainer__inputAndResponse__encriptedResponse__secondP"id="second_message_encripted">
                 Ingresa el texto que desees encriptar o desencriptar
             </p>
-            <input type="button" value="Copiar" class="mainContainer__inputAndResponse__encriptedResponse__copyButton">
+            <input type="button" onclick="copyTextFromEncriptedArea();" value="Copiar" class="mainContainer__inputAndResponse__encriptedResponse__copyButton" id="copyEncriptedButton">
 
     </div>
 </div>
 <footer class="footer">Creado por: Edgar Javier Aguirre  <a href="https://www.linkedin.com/in/edgar-javier-aguirre-978801203/"><img src="/assets/linkedin.png" alt="Linkedin logo"></a> <a href="https://github.com/elgarcito"><img src="/assets/github.png" alt="GithubLogo"> </a></footer>
 </body>
+<script src="/page.js"></script>
 </html>

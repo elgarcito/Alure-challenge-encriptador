@@ -166,6 +166,23 @@ mainContainer__inputAndResponse__input{
     flex-grow: 1;
 }
 
+.mainContainer__inputAndResponse__encriptedResponse__responseBox{
+    margin-top: 50px;
+    background-color: var(--color-fondo);
+    border: 0;
+    height: 12.68rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-ingresaYsoloMinusculas);
+    outline: none;
+    resize: none;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background-color: var(--color-muneco);
+}
+
+
 .mainContainer__inputAndResponse__encriptedResponse{
    background-color: var(--color-muneco);
    width: 25rem;
@@ -191,6 +208,19 @@ mainContainer__inputAndResponse__input{
    justify-content: center;
 }
 
+/*
+.mainContainer__inputAndResponse__encriptedResponse__textToCopy{
+    font-size: 1.5rem;
+    color: var(--color-ingresaYsoloMinusculas);
+    font-weight: 400;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    width: 1rem
+}
+*/
+
+
 .mainContainer__inputAndResponse__encriptedResponse__image{
     width: auto;
     margin-bottom: 2rem;
@@ -201,8 +231,8 @@ mainContainer__inputAndResponse__input{
     font-family: var(--font-general);
     font-weight: 700;
     font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     /*
     font-size: 24px;
     margin-right: 16px;
@@ -216,21 +246,22 @@ mainContainer__inputAndResponse__input{
     color: var(--color-ingresaYsoloMinusculas);
     font-weight: 400;
     margin-top: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
     /*
     margin-top: 16px;
     margin-right: 16px;
     margin-left: 16px;
 
     */
-    margin-bottom: 18.06rem;
+    
     text-align: center;
 }
 
 .mainContainer__inputAndResponse__encriptedResponse__copyButton{
     background-color: var(--color-botonDesencriptar);
-    width: 85%;
+    width: 80%;
     height: 4.18rem;
     border-radius: 1.5rem;
     font-size: 1rem;

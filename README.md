@@ -28,13 +28,13 @@ Aquí se aplicaron los conceptos de los cursos:
 
 En primera instancia se diseñó la maquetación principal con todos los
 tags que se posteriormente se utilizarían. El diseño fue pensado para poder ser maquetado utilizando Flexbox.
-El resultado de este trabajo puede observarse en el siguiente archivo html  [archivo html](pages\index.html).
+El resultado de este trabajo puede observarse en el siguiente archivo html  [archivo html](index.html).
 
 ### Paso 2 diseño del CSS
 Aquí se aplicaron los conceptos de los mismos cursos que en el paso 1. En primera instancia todos los elementos
 están visibles, inclusive los que no deberían segun el Figma del proyecto. En el paso 3 utilizando JS se agregarán y eliminarán estilos y atributos
 para poder obtener el resultado esperado. Como parte final se agregaron las vistas para mobile y tablet.
-El resultado final puede observarse en el siguiente  [archivo CCS](styles\style.css).
+El resultado final puede observarse en el siguiente  [archivo CCS](style.css).
 
 ### Paso 3 creacion del repositorio local y remoto
 Aquí se aplicaron los conceptos de los cursos:

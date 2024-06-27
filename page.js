@@ -40,19 +40,12 @@ function encriptText(normalText) {
     }
 }
 
-//Funcion that encript the text
+//Function that encript the text
 function encripter(validTextToEncript) {
         // Paso 1: Separar las palabras en un array
         const wordsArray = validTextToEncript.split(' ');
 
         // Paso 2: Encriptar cada palabra
-        /*
-        const transformedArray = wordsArray.map(word => {
-            // Aquí puedes aplicar tu lógica de encriptación a cada palabra
-            // Por ejemplo, cambiar cada letra por la siguiente en el alfabeto
-        return word.split('').map(letter => String.fromCharCode(letter.charCodeAt(0) + 1)).join('');
-        });
-        */
 
         const transformedArray = wordsArray.map(word => {
             return word.split('').map(char => encriptionMap[char] || char).join('');
@@ -90,18 +83,10 @@ function unEncripter(encryptedText) {
         const encryptedArray = encryptedText.split(' ');
 
         // Paso 2: Desencriptar cada palabra (por ejemplo, revertir la transformación)
-        /*
-        const decryptedArray = encryptedArray.map(word => {
-            // Aquí puedes aplicar tu lógica de desencriptación a cada palabra
-            // Por ejemplo, revertir el cambio de letras realizado previamente
-            return word.split('').map(letter => String.fromCharCode(letter.charCodeAt(0) - 1)).join('');
-        });
-        */
-
         const decryptedArray = encryptedArray.map(word => {
             return word.split('').map(char => decriptionMap[char] || char).join('');
         });
-    
+        
         // Paso 3: Concatenar nuevamente todo usando el delimitador como espacio
         const resultText = decryptedArray.join(' ');
     
